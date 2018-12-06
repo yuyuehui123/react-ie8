@@ -2,14 +2,14 @@
   "name": "react-ie8",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "jsx/app.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack",
     "hot": "webpack-dev-server --inline",
     "dev": "npm run hot && npm run start"
   },
-  "author": "",
+  "author": "黄晨",
   "license": "ISC",
   "babel": {
     "plugins": [

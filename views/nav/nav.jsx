@@ -81,7 +81,7 @@ class Nav extends React.Component {
                     <div className={'left-nav-top'}>
                         <p>
                             <i></i>
-                            杭美质量服务
+                            **********
                         </p>
                     </div>
                     <div className={'left-nav-section'}>
