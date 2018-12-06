@@ -1,0 +1,65 @@
+{
+  "name": "react-ie8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "hot": "webpack-dev-server --inline",
+    "dev": "npm run hot && npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "plugins": [
+      "add-module-exports",
+      "transform-react-jsx"
+    ],
+    "presets": [
+      "es2015",
+      "babel-preset-stage-0"
+    ],
+    "ignore": [
+      "js/bundle.js",
+      "node_modules/**/*.js"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.0",
+    "babel-core": "6.3.21",
+    "babel-loader": "6.4.1",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-plugin-transform-react-jsx": "6.3.13",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-stage-0": "6.5.0",
+    "console-polyfill": "^0.2.2",
+    "css-loader": "^1.0.0",
+    "es3ify-loader": "^0.2.0",
+    "es3ify-webpack-plugin": "^0.1.0",
+    "es5-shim": "^4.4.1",
+    "eventsource-polyfill": "^0.9.6",
+    "extract-text-webpack-plugin": "^2.0.0",
+    "fetch-ie8": "^1.4.0",
+    "history": "2.1.2",
+    "postcss-loader": "^3.0.0",
+    "react": "0.14.0",
+    "react-dom": "0.14.0",
+    "react-redux": "4.4.1",
+    "react-router": "^2.3.0",
+    "redux": "3.5.2",
+    "redux-actions": "^0.10.1",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^1.0.0",
+    "url-loader": "^1.1.2",
+    "webpack": "2.4.1",
+    "webpack-dev-server": "2.4.1"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "layui-src": "^2.4.5",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0"
+  }
+}
