@@ -1,8 +1,3 @@
-require('es5-shim');
-require('es5-shim/es5-sham');
-require('console-polyfill');
-require('fetch-ie8');
-require('babel-polyfill');
 require('../css/layui.css');
 require('./app.less');
 
@@ -23,16 +18,10 @@ class Text extends React.Component {
     }
 }
 
-/*ReactDom.render(
-    <Provider store={createStore(reducers)}>
-        {router}
-    </Provider>,
-    document.getElementById('content')
-);*/
-
 ReactDom.render(
     <Provider store={createStore(reducers)}>
         {router}
     </Provider>,
     document.getElementById('content')
 );
+

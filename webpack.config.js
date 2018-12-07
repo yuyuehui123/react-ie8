@@ -1,12 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const es3ifyPlugin = require('es3ify-webpack-plugin');
 const ExtractPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: "./jsx/app.jsx",
+    entry: ["es5-shim", "es5-shim/es5-sham", "console-polyfill", "fetch-ie8", "./jsx/app.jsx"],
     output: {
         path: __dirname + '/js',
         filename: 'bundle.js'

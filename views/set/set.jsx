@@ -30,3 +30,5 @@ module.exports = connect(
         changeNav: changeNavActionCreator
     }
 )(Set);
+
+/*module.exports = connect()(Set)*/

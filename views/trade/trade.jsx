@@ -30,3 +30,4 @@ module.exports = connect(
         changeNav: changeNavActionCreator
     }
 )(Trade);
+
