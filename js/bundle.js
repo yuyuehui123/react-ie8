@@ -30254,13 +30254,37 @@ var Login = function (_React$Component) {
                 { className: 'login-container' },
                 React.createElement(
                     'div',
-                    null,
-                    React.createElement('input', { type: 'text', placeholder: 'hhhhhhhhh' })
-                ),
-                React.createElement(
-                    Link,
-                    { to: '/' },
-                    'Home'
+                    { className: 'login-div' },
+                    React.createElement(
+                        'div',
+                        { className: 'login-left' },
+                        React.createElement(
+                            'div',
+                            { className: 'form-control' },
+                            React.createElement('i', { className: 'account-icon' }),
+                            React.createElement('input', { className: 'login-input', type: 'text', placeholder: '请输入账号' })
+                        ),
+                        React.createElement(
+                            'div',
+                            { className: 'form-control' },
+                            React.createElement('i', { className: 'password-icon' }),
+                            React.createElement('input', { className: 'login-input', type: 'password', placeholder: '请输入密码' })
+                        ),
+                        React.createElement(
+                            'div',
+                            { className: 'form-btn-control' },
+                            React.createElement(
+                                'span',
+                                { className: 'login-btn' },
+                                '\u767B\u5F55'
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        'div',
+                        { className: 'login-right' },
+                        React.createElement('img', { src: '../../images/erweima.jpg', alt: '', width: 150 })
+                    )
                 )
             );
         }

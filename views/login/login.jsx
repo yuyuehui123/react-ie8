@@ -6,10 +6,24 @@ class Login extends React.Component {
     render () {
         return (
             <div className={'login-container'}>
-                <div>
-                    <input type="text" placeholder={'hhhhhhhhh'}/>
+                <div className={'login-div'}>
+                    <div className={'login-left'}>
+                        <div className={'form-control'}>
+                            <i className={'account-icon'}></i>
+                            <input className={'login-input'} type="text" placeholder={'请输入账号'}/>
+                        </div>
+                        <div className={'form-control'}>
+                            <i className={'password-icon'}></i>
+                            <input className={'login-input'} type="password" placeholder={'请输入密码'}/>
+                        </div>
+                        <div className={'form-btn-control'}>
+                            <span className={'login-btn'}>登录</span>
+                        </div>
+                    </div>
+                    <div className={'login-right'}>
+                        <img src="../../images/erweima.jpg" alt="" width={150}/>
+                    </div>
                 </div>
-                <Link to={'/'}>Home</Link>
             </div>
         )
     }
